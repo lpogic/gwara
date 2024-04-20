@@ -29,7 +29,7 @@ gwara << <<-HJZ
 <>
 HJZ
 
-p gwara.to_s
+puts gwara.to_s
 
 # out:
 #

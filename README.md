@@ -1,7 +1,7 @@
-gwara - css influenced HTML dialect compiler
+gwara - Css influenced HTML dialect compiler
 ===
 
-HTML related language compiler.
+HTML derived language compiler.
 
 
 Installation
@@ -32,7 +32,7 @@ gwara << <<-HJZ
 <>
 HJZ
 
-p gwara.to_s
+puts gwara.to_s
 
 # out:
 #

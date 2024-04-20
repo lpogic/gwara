@@ -3,9 +3,9 @@ require_relative "./lib/gwara/version"
 Gem::Specification.new do |s|
   s.name        = "gwara"
   s.version     = Gwara::VERSION
-  s.summary     = "css influenced HTML dialect compiler"
+  s.summary     = "Css influenced HTML dialect compiler"
   s.description = <<~EOT
-    HTML related language compiler.
+    HTML derived language compiler.
   EOT
   s.authors     = ["Łukasz Pomietło"]
   s.email       = "oficjalnyadreslukasza@gmail.com"
