@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/lpogic/gwara"
   s.license       = "Zlib"
   s.required_ruby_version     = ">= 3.2.2"
-  s.add_runtime_dependency("modeling", "~> 0.0.4")
+  s.add_runtime_dependency("modeling", "~> 0.0.5")
   s.add_runtime_dependency("koper", "~> 0.0.2")
   s.metadata = {
     "documentation_uri" => "https://github.com/lpogic/gwara/blob/main/doc/wiki/README.md",
