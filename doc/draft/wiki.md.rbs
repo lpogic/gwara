@@ -1,0 +1,24 @@
+Welcome to the _#{ gemspec.name }_ documentation home page!
+===
+
+Installation
+---
+```
+gem install #{ gemspec.name }
+```
+
+Basics
+---
+
+- element classes can be encoded as: `.class`
+- element id can be encoded as: `#id`
+- element attributes can be encoded as: `[name value]`
+- element close tag can be encoded as: `<>`
+
+Usage
+---
+#{ sample.call "Complete example", "sample/a0.rb" }
+
+Authors
+---
+#{ gemspec.authors.zip(Array(gemspec.email)).map{ "- #{_1} (#{_2})" }.join("\n") }
