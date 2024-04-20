@@ -126,10 +126,33 @@ class Gwara
           @parser.add_token @buffer
           @state >> 1
           self << ch
+        when '"'
+          @buffer << ch
+          @state << :double_quoted_token
+        when "'"
+          @buffer << ch
+          @state << :single_quoted_token
+        else
+          @buffer << ch
+        end
+      when :double_quoted_token
+        case ch
+        when '"'
+          @buffer << ch
+          @state >> 1
+        else
+          @buffer << ch
+        end
+      when :single_quoted_token
+        case ch
+        when "'"
+          @buffer << ch
+          @state >> 1
         else
           @buffer << ch
         end
       end
+      
     end
 
     def close
